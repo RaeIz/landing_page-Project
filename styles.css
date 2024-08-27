@@ -2,8 +2,6 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   margin: 0;
   font-family: 'DM Sans', sans-serif;
@@ -11,35 +9,31 @@ body {
   background-color: white;
 }
 
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: right;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #015958;
-  background-color: #015958;
-}
-
 .entryWelcome{
   text-align: left;
-  margin-top: 200px;
-  margin-left: 95px;
+  margin-top: 180px;
+  margin-left: 88px;
+  font-size: 70px;
 }
 
 .logo{
   display: inline-block;
-  position: absolute; /* Permite la colocación en una posición específica dentro del contenedor */
-  top: 0; /* Alinea el logo en la parte superior */
-  left: 0; /* Alinea el logo a la izquierda */
-  margin: 10px; /* Añade un margen opcional alrededor del logo */
-  max-width: 100px; /* Ajusta el tamaño del logo según sea necesario */
   height: auto;
   border: solid 0px;
   text-align: left;
   text-decoration: none;
   color: white;
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  min-height: 75px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: solid 1px #015958;
+  background-color: #015958;
 }
 
 nav a {
@@ -47,10 +41,25 @@ nav a {
   min-width: 9rem;
   padding: 0.5rem;
   border-radius: 0.2rem;
-  border: solid 1px #023535;
+  border: solid 0px #023535;
   text-align: center;
   text-decoration: none;
-  color: #555;
+  color: white;
+  font-weight: 600;
+}
+
+nav a:hover{
+  background-color: #008F8C;
+}
+
+@media (max-width:650px){
+    header{
+      flex-direction: column;
+    }
+
+    nav{
+      padding:  10px 0px;
+    }
 }
 
 nav a[aria-current='page'] {
@@ -73,16 +82,36 @@ h1 {
 
 .block1{
   display: flex;
-  
   width: auto;
   height: 720px;
   background-color: #0FC2C0;
 }
 
 .block2{
-  display: flex;
+  min-width: 200px;
+  height: 680px;
+  background-color: white;
+  justify-content: center;
+}
+
+.block2 h1{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.block2 p{
+  text-align: center;
+}
+
+.block3{
   
   width: auto;
-  height: 720px;
-  background-color: white;
+  height: 760px;
+  background-color: #0FC2C0;
+  
+}
+
+.block3 h1{
+  text-align: center;
+  margin-bottom: 40px;
 }
